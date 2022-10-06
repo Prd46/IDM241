@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize">
+    <link rel="stylesheet" href="css/stylesheet.css" media="screen">
+    <title>alpha</title>
+</head>
+<body>
+    <header>
+        <h1>Discord Account Settings Button</h1>
+        <a href="https://support.discord.com/hc/en-us" target="_blank">Discord Help Webpage</a>
+    </header>
+    <main>
+    <h2 class="sectionTitle">Original microinteraction</h2>
+        <div class="interactionComponents">
+            <div class="textBlock">
+                <h3>Triggers</h3>
+                <ul>
+                    <li class="textItem">The microinteraction is triggered when you hover the mouse over the white box containing the Account Settings label. </li>
+                </ul>
+            </div>
+            <div class="textBlock, textBlockMid">
+                <h3>Rules / Feedback</h3>
+                <ul>
+                    <li class="textItem">The pointer icon instantly turns to the standard hand icon for clickable items.</li>
+                    <li class="textItem">The box containing the Account Settings label instantly moves up about 5-10 pixels. </li>
+                    <li class="textItem">The feedback is the same as the rules, as nothing happens in the background.</li>
+                </ul>
+            </div>
+            <div class="textBlock">
+                <h3>Loops/Modes</h3>
+                <ul>
+                    <li class="textItem">There are no loops or modes for this microinteraction.</li>
+                </ul>
+            </div>
+        </div>
+        <h2 class="sectionTitle">New microinteraction</h2>
+        <div class="interactionComponents">
+            <div class="textBlock">
+                <h3>Triggers</h3>
+                <ul>
+                    <li class="textItem">The microinteraction is triggered when you hover the mouse over the white box containing the Account Settings label. </li>
+                </ul>
+            </div>
+            <div class="textBlock, textBlockMid">
+                <h3>Rules/Feedback</h3>
+                <ul>
+                    <li class="textItem">The pointer icon instantly turns to the standard hand icon for clickable items.</li>
+                    <li class="textItem">A border that matches the company's purple color appears around the clickable box, growing from 1 pixel to 5 pixels in width
+                        within the .4 second duration time of the microinteraction.
+                    </li>
+                    <li class="textItem">The little gray sparkle images shaped like plus signs, situated to the top right of the cogs, will not be static. They will
+                        start off completely transparent, and four small 2 pixel width lines will appear and expand out from a center point, quickly disappearing by
+                        shortening in length until it has a length of 0.
+                    </li>
+                    <li class="textItem">For the rule above, this motion will apply to both sparkles. The first sparkle that is higher up will start animating immediately 
+                        on hover, and the second sparkle that is lower down will start animating .2 seconds after the first. 
+                    </li>
+                    <li class="textItem">The two cogs will spin immediately on hover, the yellow cog rotating 180 degrees clockwise, and the purple cog will rotate 180
+                        degrees counter-clockwise. The rotation speed will start at maximum speed and slow down as the animation plays through the full .4 second length.
+                    </li>
+                    <li class="textItem">The feedback is the same as the rules, as nothing happens in the background.</li>
+                </ul>
+            </div>
+            <div class="textBlock">
+                <h3>Loops/Modes</h3>
+                <ul>
+                    <li class="textItem">There are no loops or modes for this microinteraction.</li>
+                </ul>
+            </div>
+        </div>
+        <h2 class="sectionTitle">Demo Image</h2>
+        <div class="imageBox">
+            <a href="images/cogs.jpg" target="_blank"><img class="image" src="images/cogs.jpg" alt="Microinteraction display" /></a>
+        </div>
+    </main>
+</body>
+</html>
