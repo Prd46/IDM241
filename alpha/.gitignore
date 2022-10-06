@@ -41,9 +41,13 @@ Thumbs.db
 # Media #
 ############
 *.mp3
+*.png
+*.jpg
 *.ogg
 *.ogv
 *.webm
+*.woff
+*.woff2
 
 # Custom #
 ######################
