@@ -2,18 +2,11 @@
     --tempColor: rgba(255, 255, 255, 0);
 }
 
-@font-face {
-    font-family: 'nunito';
-    src: url('../fonts/nunito-variablefont_wght-webfont.woff2') format('woff2')
-         url('../fonts/nunito-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 body{
     background-attachment: fixed;
     background-image: linear-gradient(180deg, rgb(114, 137, 217), rgb(91, 77, 240));
     color: white;
-    font-family: 'nunito, Times New Roman', Times, serif;
+    font-family: 'inter';
     margin: 2rem;
 }
 header{
@@ -34,6 +27,7 @@ main{
 .interactionComponents{
     border: solid 3px var(--tempColor);
     display: flex;
+    justify-content: center;
     padding: 0 1rem;
 }
 .textBlock{
