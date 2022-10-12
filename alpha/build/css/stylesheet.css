@@ -101,6 +101,19 @@ li{
     margin: 0 auto;
     width: 25%;
 }
+.interactionCogs--yellow{
+    position: relative;
+    right: 1.75rem;
+    top: .75rem;
+}
+.interactionCogs--purple{
+    bottom: .8rem;
+    left: 1.75rem;
+    position: relative;
+}
+
+
+/* Animated elements*/
 .interactionBox{
     animation: 10s linear infinite;
     animation-play-state: paused;
@@ -122,31 +135,23 @@ li{
 }
 .interactionBox:hover .yellowCog_image{
     transition: all .4s ease-out;
-     transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 .interactionBox:hover .purpleCog_image{
     transition: all .4s ease-out;
-     transform: rotate(-180deg);
+    transform: rotate(-180deg);
 }
 .yellowCog_image{
+    transition: all .4s ease-in-out;
     width: 6rem;
 }
-.interactionCogs--yellow{
-    position: relative;
-    right: 1.75rem;
-    top: .75rem;
-}
-.interactionCogs--yellow:hover{
-    animation-play-state: running;
-}
 .purpleCog_image{
+    transition: all .4s ease-in-out;
     width: 3rem;
 }
-.interactionCogs--purple{
-    bottom: .8rem;
-    left: 1.75rem;
-    position: relative;
-}
+
+
+/*Media Queries*/
 @media screen and (max-width: 1300px){
     .interactionComponents{
         align-items: center;
@@ -212,12 +217,12 @@ li{
 }
 @media screen and (max-width: 500px){
     .interactionArea{
-        max-height: 15rem;
-        max-width: 15rem;
+        max-height: 12.5rem;
+        max-width: 12.5rem;
     }
     .interactionBox{
-        max-height: 12rem;
-        max-width: 12rem;
+        max-height: 10rem;
+        max-width: 10rem;
     }
     .yellowCog_image{
         max-width: 3rem;
@@ -230,5 +235,24 @@ li{
     }
     .interactionCaption{
         font-size: .75rem;
+    }
+    .interactionCogs--yellow{
+        right: .8375rem;
+        top: .375rem;
+    }
+    .interactionCogs--purple{
+        bottom: .45rem;
+        left: .9375rem;
+    }
+}
+@media screen and (max-width: 300px){
+    body{
+        margin: 2rem 0;
+    }
+    header{
+        margin: 0 1rem;
+    }
+    main{
+        padding: 1rem 1rem;
     }
 }
