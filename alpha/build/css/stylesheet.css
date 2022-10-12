@@ -24,6 +24,10 @@ header{
     padding: 1rem 2rem;
     text-align: center;
 }
+.copyrightBox{
+    display: flex;
+    justify-content: center;
+}
 main{
     margin: 0 2rem;
     padding: 1rem 2rem;
