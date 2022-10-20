@@ -134,6 +134,7 @@ li{
 }
 .interactionBox:hover{
     border: solid 4px rgb(102, 0, 255);
+    cursor: pointer;
     transition: all .15s ease-out;
 
 }
