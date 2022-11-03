@@ -146,7 +146,7 @@ li{
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem 3rem;
-    width: 100%;
+    width: 80%;
 }
 .linkColumn{
     width: 32rem;
@@ -307,6 +307,11 @@ li{
     .interactionCogs--purple{
         bottom: .45rem;
         left: .9375rem;
+    }
+    .modalLinks{
+        margin: 0 auto;
+        padding: 1rem 0;
+
     }
 }
 @media screen and (max-width: 300px){
