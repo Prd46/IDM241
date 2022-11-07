@@ -17,10 +17,16 @@ button.addEventListener('mouseout', function (event){
     button.classList.remove('interactionBox__active');
     }
 });
+button.addEventListener('mousedown', function (event){
+    button.classList.add('interactionBox__squeeze');
+});
 button.addEventListener('click', function (event){
     gClickDetected = true;
     button.classList.remove('interactionBox__active');
+    button.classList.remove('interactionBox__squeeze');
     button.classList.add('interactionBox__clicked');
+    yellowCog.classList.add('yellowClicked');
+    purpleCog.classList.add('purpleClicked');
     body.classList.add('preventScroll');
     setTimeout(function(){
     modal.classList.add('interactionModal__active');
