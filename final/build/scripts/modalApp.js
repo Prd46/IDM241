@@ -17,25 +17,27 @@ button.addEventListener('mouseout', function (event){
     button.classList.remove('interactionBox__active');
     }
 });
+
 button.addEventListener('mousedown', function (event){
     button.classList.add('interactionBox__squeeze');
 });
-button.addEventListener('click', function (event){
+
+button.addEventListener('mouseup', function (event){
     gClickDetected = true;
     button.classList.remove('interactionBox__active');
     button.classList.remove('interactionBox__squeeze');
-    button.classList.add('interactionBox__clicked');
-    yellowCog.classList.add('yellowClicked');
-    purpleCog.classList.add('purpleClicked');
-    body.classList.add('preventScroll');
-    setTimeout(function(){
-    modal.classList.add('interactionModal__active');
-    exit.classList.remove('modalX__fadeOut');
+    setTimeout(function(){ 
+        button.classList.add('interactionBox__clicked');
+        body.classList.add('preventScroll');
         setTimeout(function(){
-            gClickDetected = false;
-            button.classList.remove('interactionBox__clicked');
-            }, 800);
-    }, 600);
+        modal.classList.add('interactionModal__active');
+        exit.classList.remove('modalX__fadeOut');
+            setTimeout(function(){
+                gClickDetected = false;
+                button.classList.remove('interactionBox__clicked');
+                }, 800);
+        }, 600);
+  }, 1);
 });
 
 
