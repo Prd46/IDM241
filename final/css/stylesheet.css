@@ -45,7 +45,7 @@ main{
     width: 20rem;
 }
 .image{
-    width: 20rem;
+    width: 80%;
     display: block;
     margin: 1rem auto;
 }
@@ -95,10 +95,6 @@ li{
         flex-direction: column;
         margin: 0;
         padding: 0;
-    }
-    .image{
-        margin: .25rem;
-        width: 18rem;
     }
     .imageBox{
         display: flex;

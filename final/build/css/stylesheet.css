@@ -18,6 +18,9 @@ body{
     font-family: 'inter';
     margin: 0;
 }
+img{
+    pointer-events: none;
+}
 body::-webkit-scrollbar {
     display: none;
   }
@@ -64,13 +67,11 @@ main{
     display: block;
     margin: 2rem auto;
 }
-.gifBox{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 90%;
+.featuredGif{
+    border: double 2px black;
     display: block;
-    margin: 2rem auto;
+    margin: 1rem auto;
+    max-width: 70%;
 }
 .imageBox{
     display: flex;
@@ -302,7 +303,7 @@ li{
 
 
 .interactionBox__clicked{
-    cursor: pointer;
+    cursor: default;
     outline: solid 4px rgba(102, 0, 255, 0);
     transition: all .15s ease-out;
 
