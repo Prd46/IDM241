@@ -398,6 +398,9 @@ li{
     .interactionArea{
         max-width: 100%;
     }
+    .columnLink{
+        height: 4rem;
+    }
 }
 @media screen and (max-width: 500px){
     .interactionArea{
