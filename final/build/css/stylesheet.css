@@ -215,7 +215,10 @@ li{
     height: 3rem;
     justify-content: center;
     opacity: 1;
+    position: absolute;
+    right: 20px;
     text-align: center;
+    top: 20px;
     transition: all .2s ease-out;
     width: 3rem;
 }
